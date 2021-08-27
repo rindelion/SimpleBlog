@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Mukta|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Roboto|Unica+One|Vibur');
+*{
+    box-sizing: border-box;
+    /* font-family: 'Playfair Display', serif; */
+}
+
+body {
+    background-image: url(https://media.sketchfab.com/models/4bc855c26a12428ebd9a152b2c9586b8/thumbnails/4c3d2deb43b147799d8d307c8feb92eb/1920x1080.jpeg?fbclid=IwAR0R_eA7g-xCoW7WZcZT4l5pu5lVi2g1gR7CCM0LIqgOEDQb7b4jZv8g4ew);
+    /* background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    background: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+
+.content {
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+    opacity:0.9;
+}
+
+
+.shadow-box {
+    background: white;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 700px) {
+    .shadow-box {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        
+    }
+}
+
+.signup-wrapper .company-details {
+    background: url(https://media.sketchfab.com/models/4bc855c26a12428ebd9a152b2c9586b8/thumbnails/4c3d2deb43b147799d8d307c8feb92eb/1920x1080.jpeg?fbclid=IwAR0R_eA7g-xCoW7WZcZT4l5pu5lVi2g1gR7CCM0LIqgOEDQb7b4jZv8g4ew);
+    background-size: cover;
+    position: relative;
+}
+
+    .signup-wrapper .company-details:before {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        background: linear-gradient(to top, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%);
+    }
+
+    .signup-wrapper .company-details .wrapper-1 {
+        position: relative;
+        padding-bottom: 10px;
+        padding-top: 22px;
+    }
+
+    .signup-wrapper .company-details .logo {
+        padding: 0 20px;
+        width: 20%;
+        margin: 0 auto;
+    }
+
+        /* .signup-wrapper .company-details .logo .icon-food {
+            background: url();
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 38px;
+            height: 38px;
+            margin: 0 auto;
+        } */
+
+    .signup-wrapper .company-details .title {
+        padding: 20px;
+        width: 74%;
+        margin: 0 auto;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 600;
+        font-size: 250%;
+        text-shadow: 1px 1px #4b4a4a;
+        text-align: center;
+    }
+
+    .signup-wrapper .company-details .slogan {
+        display: none;
+    }
+
+.signup-wrapper .signup-form .wrapper-2 {
+    padding: 14px 20px;
+    margin: 30px 80px;
+}
+
+.signup-wrapper .signup-form .form-title {
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+    color: #13173f;
+    padding: 5px;
+    text-align: center;
+}
+
+.signup-wrapper .signup-form .form .content-item {
+    text-transform: uppercase;
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
+    color:#4b4a4a;
+    font-size: 15px;
+    margin-top: 35px;
+    text-align: center;   
+}
+
+.signup-wrapper .signup-form .form input[type=text], .signup-wrapper .signup-form .form input[type=password] {
+    border: none;
+    border-bottom: 1px solid #e4e4e4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.signup-wrapper .signup-form .signup {
+    background-color: #a8edea;
+    border: none;
+    color: rgb(65, 59, 59);
+    padding: 15px 25px;
+    font-size: 1em;
+    text-transform: capitalize;
+    margin-top: 49px;
+    border-radius: 5px;
+    font-family: 'Abel', sans-serif;
+}
+
+
+input::placeholder {
+    color:darkgray;
+    font-family: 'Abel', sans-serif;
+    font-size: 15px;
+}
+
+@media (min-width: 200px) {
+
+    .signup-wrapper .signup-form .wrapper-2 {
+        margin: 30px 23px;
+    }
+
+    .signup-wrapper .company-details .title {
+        width: 90%;
+        font-size: 1.5em;
+        color: #fffa56
+    }
+}
+
+@media (min-width: 300px) {
+    .signup-wrapper .signup-form .login {
+        display: inline-block;
+    }
+
+    .signup-wrapper .signup-form .wrapper-2 {
+        margin: 30px 60px;
+    }
+
+    .signup-wrapper .company-details .title {
+        width: 80%;
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 500px) {
+    .signup-wrapper .signup-form .login {
+        display: inline;
+    }
+}
+
+@media (min-width: 700px) {
+    .signup-wrapper .company-details,
+    .signup-wrapper .signup-form {
+        width: 50%;
+    }
+
+    .signup-wrapper {
+        display: flex;
+        max-width: 700px;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+
+        .signup-wrapper .company-details .wrapper-1 {
+            padding-bottom: 150px;
+            padding-top: 160px;
+        }
+
+        .signup-wrapper .company-details .slogan {
+            padding: 0 20px;
+            width: 70%;
+            margin: 0 auto;
+            color: #f6e883;
+            font-size: 1.2em;
+            text-align: center;
+            text-shadow: 1px 1px #4b4a4a;
+            display: block;
+        }
+
+        .signup-wrapper .company-details .title {
+            width: 76%;
+        }
+
+        .signup-wrapper .signup-form .wrapper-2 {
+            padding: 50px 40px;
+            margin: 0;
+        }
+
+        .signup-wrapper .signup-form .login {
+            display: inline;
+        }
+
+        .signup-wrapper .signup-form .form .content-item {
+            text-align: initial;
+        }
+
+        .signup-wrapper .signup-form .form input[type=text], .signup-wrapper .signup-form .form input[type=password] {
+            text-align: initial;
+        }
+
+        .signup-wrapper .signup-form .form-title {
+            text-align: initial;
+            padding: 0;
+        }
+}
